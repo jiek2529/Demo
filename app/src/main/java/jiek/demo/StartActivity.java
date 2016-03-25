@@ -1,9 +1,11 @@
 package jiek.demo;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 
+import jiek.demo.service.MyIntentService;
 import jiek.demo.service.MyService;
 
 public class StartActivity extends BaseActivity {
@@ -16,7 +18,7 @@ public class StartActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
-//        startService(new Intent(this, MyIntentService.class));
+        startService(new Intent(this, MyIntentService.class));
 //        startService(new Intent(this, MyIntentService.class));
 //        startService(new Intent(this, MyService.class));
 //        startService(new Intent(this, MyService.class));
