@@ -21,6 +21,7 @@ public class MyIntentService extends IntentService {
     // TODO: Rename parameters
     private static final String EXTRA_PARAM1 = "jiek.demo.extra.PARAM1";
     private static final String EXTRA_PARAM2 = "jiek.demo.extra.PARAM2";
+    private int count = 1;
 
     public MyIntentService() {
         super("MyIntentService");
@@ -72,7 +73,7 @@ public class MyIntentService extends IntentService {
         }
         l("onHandleIntent thead.sleep start ==> " + count);
         doSomething();
-        l("onHandleIntent thead.sleep complete! ==> "+count);
+        l("onHandleIntent thead.sleep complete! ==> " + count);
     }
 
     /**
@@ -93,7 +94,6 @@ public class MyIntentService extends IntentService {
         throw new UnsupportedOperationException("Not yet implemented");
     }
 
-
     private void l(String msg) {
         Log.e(getClassName(), msg);
     }
@@ -108,7 +108,6 @@ public class MyIntentService extends IntentService {
         l("onCreate");
     }
 
-    private int count = 1;
     @Override
     public void onStart(Intent intent, int startId) {
         super.onStart(intent, startId);
