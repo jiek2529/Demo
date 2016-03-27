@@ -17,6 +17,9 @@ public class StartActivity extends BaseActivity {
         setContentView(R.layout.activity_start);
 
         if(false)return;
+
+
+
 //        startService(new Intent(this, MyIntentService.class));
 //        startService(new Intent(this, MyIntentService.class));
 //        startService(new Intent(this, MyService.class));
